@@ -1,10 +1,13 @@
 import React from 'react';
+import {Routing} from './routes/Routing'
+import {NavigationBar} from './components/navigationbar/NavigationBar'
+import './shared/global/Global.css'
 
 function App() {
   return (
-    <div>
-      <h1>Pepe's website</h1>
-    </div>
+    <Routing>
+      <NavigationBar />
+    </Routing>
   );
 }
 
