@@ -1,7 +1,7 @@
 .navigationBarWrapper{
     display: grid;
     grid-template-columns:repeat(10, 1fr);
-    background-color: brown;
+    background-color: goldenrod;
 }
 
 .logotype{
@@ -11,4 +11,8 @@
 .signIn{
     grid-column: 9/10;
     align-self: center;
+}
+
+.logotype, .signIn {
+    cursor:pointer;
 }
