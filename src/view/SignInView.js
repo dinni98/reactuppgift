@@ -1,7 +1,8 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { UserContext } from '../shared/global/provider/UserProvider'
 
 export const SignInView = () => {
+
 
     const [username, setUsername] = useState()
     const [password, setPassword] = useState()
@@ -13,6 +14,7 @@ export const SignInView = () => {
 
     return (
         <div>
+            <h2>Please sign in.</h2>
             <span>Username: </span><input onChange={event => setUsername(event.target.value)} />
             <span>Password: </span><input type="password" onChange={event => setPassword(event.target.value)} />
             <button onClick={() => login()}>Login</button>
